@@ -20,9 +20,9 @@ class ToDo extends Model
      */
     public $id              = 0;
     public $taskDescription = '';
-    public $userId          = 0;
+    public $userId          ;
     public $isDone          = false;
-    public $createdAt       = 0;
+    public $createdAt       ;
 
     /**
      * @return string
