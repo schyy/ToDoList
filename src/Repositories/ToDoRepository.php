@@ -44,12 +44,6 @@ class ToDoRepository implements ToDoRepositoryContract
      */
     public function createTask(array $data): ToDo
     {
-        try {
-            ToDoValidator::validateOrFail($data);
-        } catch (ValidationException $e) {
-            throw $e;
-        }
-
         /**
          * @var DataBase $database
          */
